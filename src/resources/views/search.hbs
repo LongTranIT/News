@@ -1,0 +1,70 @@
+<!-- Main News Start-->
+<div class="main-news">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2><i class="fas fa-align-justify"></i>Search News</h2>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="mn-img">
+                                    <img src="img/{{news.0.image}}" />
+                                </div>
+                                <div class="mn-content">
+                                    <a class="mn-title" href="{{news.0.catelogy}}/{{news.0.slug}}">{{news.0.title}}</a>
+                                    <a class="mn-date" href=""><i class="far fa-clock"></i>05-Feb-2020</a>
+                                    <p class="block-ellipsis">
+                                        {{news.0.text}}
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                {{#each news}}
+                                {{#if @index}}
+                                <div class="mn-list">
+                                    <div class="mn-img">
+                                        <img src="img/{{this.image}}" />
+                                    </div>
+                                    <div class="mn-content">
+                                        <a class="mn-title" href="{{this.catelogy}}/{{this.slug}}">{{this.title}}</a>
+                                        <a class="mn-date" href=""><i class="far fa-clock"></i>05-Feb-2020</a>
+                                    </div>
+                                </div>
+                                {{/if}}
+                                {{/each}}
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="sidebar">
+                    <div class="sidebar-widget">
+                        <h2><i class="fas fa-align-justify"></i>Ads 1 column</h2>
+                        <div class="image">
+                            <a href=""><img src="img/adds-1.jpg" alt="Image"></a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h2><i class="fas fa-align-justify"></i>Ads 2 column</h2>
+                        <div class="image">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <a href=""><img src="img/adds-2.jpg" alt="Image"></a>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href=""><img src="img/adds-2.jpg" alt="Image"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Main News End-->
